@@ -1,0 +1,58 @@
+$border: none;
+$out: none;
+
+@mixin container($value, $value2, $value3, $value4, $value5) {
+  background-color: $value2;
+  justify-content: $value;
+  flex-direction: $value5;
+  align-items: center;
+  min-height: $value4;
+  padding: $value3;
+  display: flex;
+}
+@mixin main($value, $value2, $value3) {
+  background-color: $value2;
+  min-height: $value;
+  padding: $value3;
+}
+@mixin buttonResponsive {
+  cursor: pointer;
+  display: block;
+  height: 25px;
+  color: $font;
+  width: 25px;
+}
+@mixin buttonCards {
+  border: $border;
+  outline: $border;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80%;
+  margin-left: 10px;
+  padding: 8px 8px;
+  transition: .1s;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+@mixin button {
+  border: $border;
+  outline: $border;
+  background-color: $red;
+  border-radius: 5%;
+  transition: 0.5s;
+  padding: 8px 8px;
+  cursor: pointer;
+  color: $font;
+  &:hover {
+    background-color: #ca4545;
+    transition: .2s;
+  }
+}
+@mixin page() {
+  font-family: 'DM Sans', sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
